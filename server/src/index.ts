@@ -3,6 +3,7 @@ import cors from "cors";
 
 import router from "./routes/index";
 import errorHandler from "./error/errorHandler";
+import path from "path";
 
 const app = express();
 

@@ -72,10 +72,14 @@ const Post = ({
   } = useSelector(userSelector.getUser);
 
   let imageSrc;
+  console.log(imageSrc);
+
   if (imagePath)
     imageSrc = `${import.meta.env.VITE_SERVER_URL}/${imagePath
       .split(`\\`)
       .join("/")}`;
+
+  console.log("modified === " + imageSrc);
 
   const date = updateDate > uploadDate ? updateDate : uploadDate;
 
