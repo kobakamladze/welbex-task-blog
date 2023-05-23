@@ -1,4 +1,3 @@
 {
-  "rewrites": [{ "source": "/(.*)", "destination": "/api" }],
-  "builds": [{ "src": "uploads/**", "use": "@vercel/static" }]
+  "rewrites": [{ "source": "/(.*)", "destination": "/api" }]
 }
